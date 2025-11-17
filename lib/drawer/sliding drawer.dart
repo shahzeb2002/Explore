@@ -10,7 +10,7 @@ class SlidingDrawerDemo extends StatefulWidget {
 class _SlidingDrawerDemoState extends State<SlidingDrawerDemo>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
-  double maxSlide = 250; // Drawer width
+  double maxSlide = 250;
 
   @override
   void initState() {
@@ -89,9 +89,8 @@ class _SlidingDrawerDemoState extends State<SlidingDrawerDemo>
     );
   }
 
-  // DRAWER UI
   Widget buildDrawer() {
-    return Material( // ← IMPORTANT FIX
+    return Material(
       child: Container(
         width: maxSlide,
         decoration: BoxDecoration(
