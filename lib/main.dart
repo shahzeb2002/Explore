@@ -1,4 +1,5 @@
 import 'package:explore/appbar/classic.dart';
+import 'package:explore/appbar/curved.dart';
 import 'package:explore/drawer/Classic_menu_drawer.dart';
 import 'package:explore/drawer/curved_drawer.dart';
 import 'package:explore/drawer/sliding%20drawer.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
 
-      home: ClassicAppBarDemo(),
+      home: CurvedAppBarDemo(),
     );
   }
 }
