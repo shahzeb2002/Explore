@@ -1,4 +1,6 @@
-import 'package:explore/Classic_menu_drawer.dart';
+import 'package:explore/drawer/Classic_menu_drawer.dart';
+import 'package:explore/drawer/curved_drawer.dart';
+import 'package:explore/drawer/sliding%20drawer.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
 
-      home: ClassicMenuDrawer(),
+      home: SlidingDrawerDemo(),
     );
   }
 }
