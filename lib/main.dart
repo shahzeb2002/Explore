@@ -3,6 +3,8 @@ import 'package:explore/appbar/curved.dart';
 import 'package:explore/appbar/floating.dart';
 import 'package:explore/appbar/glass.dart';
 import 'package:explore/bottom%20nav%20bar/curved_bottom.dart';
+import 'package:explore/bottom%20nav%20bar/dot%20nav.dart';
+import 'package:explore/bottom%20nav%20bar/salmon.dart';
 import 'package:explore/drawer/Classic_menu_drawer.dart';
 import 'package:explore/drawer/curved_drawer.dart';
 import 'package:explore/drawer/sliding%20drawer.dart';
@@ -20,8 +22,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        useMaterial3: false,
+      ),
 
-      home: CurvedBottomNavDemo(),
+      home: DotBottomNavDemo(),
     );
   }
 }
